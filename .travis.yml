@@ -1,6 +1,6 @@
 language: java
 
-#Cache the directories for STARTS artifacts
+#Cache the directories for STARTS artifacts and Maven downloads
 cache:
   directories:
     - $HOME/build/ksong/java-design-patterns/observer/.starts
