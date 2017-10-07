@@ -1,4 +1,8 @@
 language: java
+cache:
+  directories:
+    - $HOME/observer/.starts
+    - $HOME/observer/jdeps-cache
 jdk:
 - oraclejdk8
 
@@ -17,8 +21,6 @@ install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -e
 
 script:
-- pwd
-- echo "$HOME"
 - mvn starts:starts
 
 after_success:
