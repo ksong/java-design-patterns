@@ -1,4 +1,6 @@
 language: java
+
+#Cache the directories for STARTS artifacts
 cache:
   directories:
     - $HOME/observer/.starts
