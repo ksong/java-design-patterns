@@ -3,8 +3,8 @@ language: java
 #Cache the directories for STARTS artifacts
 cache:
   directories:
-    - $HOME/java-design-patterns/observer/.starts
-    - $HOME/java-design-patterns/observer/jdeps-cache
+    - $HOME/build/ksong/java-design-patterns/observer/.starts
+    - $HOME/build/ksong/java-design-patterns/observer/jdeps-cache
 jdk:
 - oraclejdk8
 
@@ -23,7 +23,7 @@ install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -e
 
 before_script:
-- grep "java-design-patterns/observer/target/classes/com/iluwatar/observer" $HOME/java-design-patterns/observer/.starts/deps.zlc
+- grep "java-design-patterns/observer/target/classes/com/iluwatar/observer" $HOME/build/ksong/java-design-patterns/observer/.starts/deps.zlc
 
 script:
 - mvn starts:starts
