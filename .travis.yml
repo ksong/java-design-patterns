@@ -5,6 +5,7 @@ cache:
   directories:
     - $HOME/build/ksong/java-design-patterns/observer/.starts
     - $HOME/build/ksong/java-design-patterns/observer/jdeps-cache
+    - $HOME/.m2
 jdk:
 - oraclejdk8
 
