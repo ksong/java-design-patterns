@@ -23,7 +23,8 @@ install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -e
 
 before_script:
-- grep "java-design-patterns/observer/target/classes/com/iluwatar/observer" $HOME/build/ksong/java-design-patterns/observer/.starts/deps.zlc
+#- grep "java-design-patterns/observer/target/classes/com/iluwatar/observer" $HOME/build/ksong/java-design-patterns/observer/.starts/deps.zlc
+- ls -a $HOME/build/ksong/java-design-patterns/observer/
 
 script:
 - mvn starts:starts
