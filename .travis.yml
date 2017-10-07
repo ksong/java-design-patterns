@@ -3,8 +3,8 @@ language: java
 #Cache the directories for STARTS artifacts
 cache:
   directories:
-    - $HOME/observer/.starts
-    - $HOME/observer/jdeps-cache
+    - $HOME/java-design-patterns/observer/.starts
+    - $HOME/java-design-patterns/observer/jdeps-cache
 jdk:
 - oraclejdk8
 
@@ -17,7 +17,7 @@ env:
 before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
-- grep "java-design-patterns/observer/target/classes/com/iluwatar/observer" $HOME/observer/.starts/deps.zlc
+- grep "java-design-patterns/observer/target/classes/com/iluwatar/observer" $HOME/java-design-patterns/observer/.starts/deps.zlc
 
 # default install command is just "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
 install:
