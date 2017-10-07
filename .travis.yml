@@ -27,7 +27,6 @@ script:
 - mvn starts:starts
 
 after_success:
-- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dsonar.host.url=https://sonarqube.com -Dsonar.login=$SONAR_TOKEN
 - bash update-ghpages.sh
 
 
