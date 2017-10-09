@@ -3,8 +3,8 @@ language: java
 #Cache the directories for STARTS artifacts and Maven downloads
 cache:
   directories:
-#    - $HOME/build/ksong/java-design-patterns/observer/.starts
-#    - $HOME/build/ksong/java-design-patterns/observer/jdeps-cache
+    - $HOME/build/ksong/java-design-patterns/observer/.starts
+    - $HOME/build/ksong/java-design-patterns/observer/jdeps-cache
     - $HOME/.m2
 jdk:
 - oraclejdk8
@@ -24,7 +24,7 @@ install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -e
 
 #script:
-#- mvn starts:starts
+- mvn starts:starts
 
 after_success:
 - bash update-ghpages.sh
