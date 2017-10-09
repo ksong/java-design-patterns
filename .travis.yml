@@ -26,6 +26,7 @@ install:
 #script:
 #- mvn starts:starts
 
+#Script to run after success
 after_success:
 - bash update-ghpages.sh
 
