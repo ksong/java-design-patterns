@@ -31,7 +31,6 @@ import org.slf4j.LoggerFactory;
  *
  */
 public class Orcs implements WeatherObserver {
-  public static final int FOO = 0;
   private static final Logger LOGGER = LoggerFactory.getLogger(Orcs.class);
 
   @Override
